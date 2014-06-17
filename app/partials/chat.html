@@ -1,0 +1,20 @@
+<h2>Chat</h2>
+
+<form>
+  <input placeholder="Neck" ng-model="newMeasurementNeck">
+  <input placeholder="Sleeve" ng-model="newMeasurementSleeveLength">
+  <input placeholder="Opening" ng-model="newMeasurementSleeveOpening">
+  <input placeholder="Waist" ng-model="newMeasurementWaist">
+
+
+  <button type="submit" ng-click="addMessage()">send</button>
+</form>
+
+<ul id="messages" ng-show="messages">
+    <li ng-repeat="message in messages">{{message.text}}</li>
+</ul>
+
+<p>
+  Running the 'interpolate' filter:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
