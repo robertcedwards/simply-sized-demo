@@ -12,14 +12,11 @@ angular.module('myApp.controllers', [])
 
       // constrain number of messages by limit into syncData
       // add the array into $scope.messages
-      $scope.messages = syncData('messages', 10);
+      $scope.messages = syncData('messages');
 
       // add new messages to the list
       $scope.addMessage = function() {
-         if( $scope.newMeasurementNeck) {
-            $scope.messages.$add({text: $scope.newMeasurementNeck});
-            $scope.newMeasurementNeck = null;
-         }
+
          
          if( $scope.newMeasurementSleeveLength) {
             $scope.messages.$add({text: $scope.newMeasurementSleeveLength});
@@ -29,6 +26,15 @@ angular.module('myApp.controllers', [])
          if( $scope.newMeasurementSleeveOpening) {
             $scope.messages.$add({text: $scope.newMeasurementSleeveOpening});
             $scope.newMeasurementSleeveOpening = null;
+         }
+         if( $scope.newMeasurementWidth) {
+            $scope.messages.$add({text: $scope.newMeasurementWidth});
+            $scope.newMeasurementWidth = null;
+         }
+
+         if( $scope.newMeasurementHeight) {
+            $scope.messages.$add({text: $scope.newMeasurementHeight});
+            $scope.newMeasurementHeight = null;
          }
          
          if( $scope.newMeasurementWaist) {
