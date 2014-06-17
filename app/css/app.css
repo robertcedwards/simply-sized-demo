@@ -45,6 +45,16 @@ p.status.good, p.good {
    color: green;
 }
 
+
+form {
+  float: left;
+}
+input {
+  float: left;
+  clear: both;
+  margin-top: 35px;
+}
+
 form label {
    display: block;
    margin: 15px 0;
