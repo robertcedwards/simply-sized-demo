@@ -78,3 +78,22 @@ fieldset {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
+
+.new-measurement{
+    float: left;
+    width: 100%;
+}
+.saved-measurements {
+    float: left;
+}
+ul#messages {
+    float: left;
+}
+li.ng-scope.ng-binding {
+    margin-top: 35px;
+}
+
+
+
+
+
