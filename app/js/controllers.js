@@ -7,39 +7,19 @@ angular.module('myApp.controllers', [])
       syncData('syncedValue').$bind($scope, 'syncedValue');
    }])
 
-  .controller('ChatCtrl', ['$scope', 'syncData', function($scope, syncData) {
-      $scope.newMessage = null;
+  .controller('ChatCtrl', ['$scope','syncData', function($scope, syncData) {
+      $scope.tshirt = null;
 
       // constrain number of messages by limit into syncData
       // add the array into $scope.messages
-      $scope.messages = syncData('messages');
+      $scope.tshirt = {name: 'Stussy', sleeve: '6', opening: '4', width: '36', height: '45', waist: '36' };
 
       // add new messages to the list
-      $scope.addMessage = function() {
+      $scope.addMeasurement = function() {
 
-         
-         if( $scope.newMeasurementSleeveLength) {
-            $scope.messages.$add({text: $scope.newMeasurementSleeveLength});
-            $scope.newMeasurementSleeveLength = null;
-         }
-         
-         if( $scope.newMeasurementSleeveOpening) {
-            $scope.messages.$add({text: $scope.newMeasurementSleeveOpening});
-            $scope.newMeasurementSleeveOpening = null;
-         }
-         if( $scope.newMeasurementWidth) {
-            $scope.messages.$add({text: $scope.newMeasurementWidth});
-            $scope.newMeasurementWidth = null;
-         }
-
-         if( $scope.newMeasurementHeight) {
-            $scope.messages.$add({text: $scope.newMeasurementHeight});
-            $scope.newMeasurementHeight = null;
-         }
-         
-         if( $scope.newMeasurementWaist) {
-            $scope.messages.$add({text: $scope.newMeasurementWaist});
-            $scope.newMeasurementWaist = null;
+          if( $scope.tshirt.name) {
+            $scope.tshirt.$add({name: $scope.tshirt.name});
+            $scope.tshirt.name = null;
          }
 
 
