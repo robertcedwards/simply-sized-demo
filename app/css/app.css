@@ -55,6 +55,11 @@ input {
   margin-top: 35px;
 }
 
+form button {
+  float: left;
+  clear: both;
+}
+
 form label {
    display: block;
    margin: 15px 0;
@@ -86,8 +91,11 @@ fieldset {
 .saved-measurements {
     float: left;
 }
-ul#messages {
+ul#shirts {
     float: left;
+}
+ul#shirts li {
+list-style: none;
 }
 li.ng-scope.ng-binding {
     margin-top: 35px;

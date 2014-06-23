@@ -1,0 +1,27 @@
+<div class="new-measurement">
+<img style="float:left;"src="img/tshirt-size.png">
+<form>
+  <input placeholder="Sleeve" ng-model="tshirt.sleeve">
+  <input placeholder="Opening" ng-model="tshirt.opening">
+  <input placeholder="Width" ng-model="tshirt.width">
+  <input placeholder="Height" ng-model="tshirt.height">
+  <input placeholder="Waist" ng-model="tshirt.waist">
+  <input placeholder="Name" ng-model="tshirt.name">
+  <input placeholder="Brand" ng-model="tshirt.brand">
+  <input placeholder="Size" ng-model="tshirt.size">
+  <button type="submit" ng-click="addMessage()">send</button>
+</form>
+</div>
+<div class="saved-measurements">
+<img style="float:left;"src="img/tshirt-size.png">	
+<ul id="shirts" ng-show="shirts" ng-repeat="shirt in shirts">
+    <li class="ng-scope ng-binding">{{shirt.sleeve}} "</li>
+    <li class="ng-scope ng-binding">{{shirt.opening}} "</li>
+    <li class="ng-scope ng-binding">{{shirt.width}} "</li>
+    <li class="ng-scope ng-binding">{{shirt.height}} "</li>
+    <li class="ng-scope ng-binding">{{shirt.waist}} "</li>
+    <li class="ng-scope ng-binding">{{shirt.name}}</li>
+    <li class="ng-scope ng-binding">{{shirt.brand}}</li>
+    <li class="ng-scope ng-binding">{{shirt.size}}</li>
+</ul>
+</div>
