@@ -10,9 +10,9 @@ angular.module('myApp.routes', ['ngRoute'])
          controller: 'HomeCtrl'
       });
 
-      $routeProvider.when('/chat', {
-         templateUrl: 'partials/chat.html',
-         controller: 'ChatCtrl'
+      $routeProvider.when('/shirts', {
+         templateUrl: 'partials/shirts.html',
+         controller: 'ShirtController'
       });
 
       $routeProvider.when('/account', {

@@ -7,7 +7,7 @@ angular.module('myApp.controllers', [])
       syncData('syncedValue').$bind($scope, 'syncedValue');
    }])
 
-  .controller('ChatCtrl', ['$scope', 'syncData', function($scope, syncData) {
+  .controller('ShirtController', ['$scope', 'syncData', function($scope, syncData) {
       $scope.newMessage = null;
 
       // constrain number of messages by limit into syncData
@@ -54,6 +54,8 @@ angular.module('myApp.controllers', [])
                }
             });
          }
+      
+
       };
 
       $scope.createAccount = function() {
@@ -95,6 +97,29 @@ angular.module('myApp.controllers', [])
             $scope.unBindAccount = unBind;
          });
       };
+      
+      // Adding shirt scope to account page
+      $scope.newMessage = null;
+      // add the array into $scope.messages
+      $scope.shirts = syncData('shirts');
+
+      // add new messages to the list
+      $scope.addMessage = function() {
+         var reqFields = ['sleeve', 'opening', 'width', 'height', 'waist', 'name', 'brand', 'size'];
+         var reqLen = reqFields.length;
+         for(var i = 0;i<reqLen;++i) {
+            if($scope.tshirt[reqFields[i]] == undefined || $scope.tshirt[reqFields[i]] == "") {
+               return false;
+            }
+         }
+         // We're good, send the whole thing as a message
+         $scope.shirts.$add($scope.tshirt);
+         // Clear form
+         for(var key in $scope.tshirt) {
+            $scope.tshirt[key] = "";
+         }
+      };
+
       // set initial binding
       $scope.syncAccount();
 
