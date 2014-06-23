@@ -93,14 +93,18 @@ fieldset {
 }
 ul#shirts {
     float: left;
-}
-ul#shirts li {
-list-style: none;
-}
-li.ng-scope.ng-binding {
-    margin-top: 35px;
+    width:  150px;
 }
 
+ul#shirts li {
+    list-style: none;
+}
+li.ng-scope.ng-binding {
+    padding:.5em  ;
+
+}
+ul:nth-child(even) {background: #CCC}
+ul:nth-child(odd) {background: #FFF}
 
 
 
