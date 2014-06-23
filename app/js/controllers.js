@@ -7,7 +7,7 @@ angular.module('myApp.controllers', [])
       syncData('syncedValue').$bind($scope, 'syncedValue');
    }])
 
-  .controller('ChatCtrl', ['$scope', 'syncData', function($scope, syncData) {
+  .controller('ShirtController', ['$scope', 'syncData', function($scope, syncData) {
       $scope.newMessage = null;
 
       // constrain number of messages by limit into syncData
@@ -54,6 +54,8 @@ angular.module('myApp.controllers', [])
                }
             });
          }
+      
+
       };
 
       $scope.createAccount = function() {
