@@ -46,7 +46,7 @@ p.status.good, p.good {
 }
 
 
-form {
+/*form {
   float: left;
 }
 input {
@@ -69,6 +69,7 @@ form label span {
    display: block;
    font-weight: bold;
 }
+*/
 
 .error {
    color: red;
@@ -105,6 +106,83 @@ li.ng-scope.ng-binding {
 }
 ul:nth-child(even) {background: #CCC}
 ul:nth-child(odd) {background: #FFF}
+
+
+#shirtContainer {
+  position: relative;
+  margin: 4em 0;
+}
+
+input {
+  border: black 3px solid;
+  background: #FFF;
+  width: 100px;
+  height: 18px;
+  border-radius: 25px;
+}
+
+.shirtImg {
+  float: left;
+}
+
+.Sleeve {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+.Opening {
+  position: absolute;
+  top: 130px;
+  left: 400px;
+}
+
+.Width {
+  position: absolute;
+  top: 195px;
+  left: 205px;
+
+}
+
+.Height {
+  position: absolute;
+  top: 300px;
+  left: 160px;
+}
+
+.Waist {
+  position: absolute;
+  top: 405px;
+  left: 205px;
+}
+
+.General {
+  width: 106px;
+  float: left;
+  position: relative;
+  top: 325px;
+}
+
+.General input {
+  margin-top: 15px;
+}
+
+.General button {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
