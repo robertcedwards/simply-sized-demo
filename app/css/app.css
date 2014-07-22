@@ -87,7 +87,7 @@ fieldset {
 
 .new-measurement{
     float: left;
-    width: 100%;
+    width: 600px;
 }
 .saved-measurements {
     float: left;
@@ -125,61 +125,60 @@ input {
 .shirtImg {
   float: left;
 }
-input.Neck {
-  position: absolute;
+input.neck {
+  position: relative;
   top: -25px;
-  left: 142px;
+  left: -261px;
 }
 
-input.Shoulder {
-  position: absolute;
-  top: -3px;
-  left: 260px;
+input.shoulder {
+  position: relative;
+  top: -40px;
+  left: -140px;
 }
 
-.Sleeve {
-  position: absolute;
-  top: 35px;
-  left: 345px;
+.sleeve {
+  position: relative;
+  top: -30px;
+  left: -54px;
 }
 
-.Opening {
-  position: absolute;
-  top: 130px;
-  left: 400px;
+.opening {
+  position: relative;
+  top: 45px;
+  left: -10px;
 }
 
-.Width {
-  position: absolute;
-  top: 195px;
-  left: 205px;
+.width {
+  position: relative;
+  top: 82px;
+  left: -236px;
 
 }
 
-.Height {
-  position: absolute;
+.height {
+  position: relative;
+  top: 180px;
+  left: -236px;
+}
+
+.waist {
+  position: relative;
   top: 300px;
-  left: 160px;
+  left: -236px;
 }
 
-.Waist {
-  position: absolute;
-  top: 405px;
-  left: 205px;
-}
-
-.General {
+.general {
   width: 106px;
   float: left;
-  position: relative;
-  top: 325px;
+
 }
 
-.General input {
+.general input {
   margin-top: 15px;
 }
 
-.General button {
+.general button {
   margin-top: 10px;
 }
 
