@@ -85,11 +85,11 @@ fieldset {
     display: none !important;
 }
 
-.new-measurement{
+.new{
     float: left;
     width: 600px;
 }
-.saved-measurements {
+.saved {
     float: left;
 }
 ul#shirts {
@@ -125,76 +125,114 @@ input {
 .shirtImg {
   float: left;
 }
-input.neck {
+.new input.neck {
   position: relative;
   top: -25px;
   left: -261px;
 }
 
-input.shoulder {
+.new input.shoulder {
   position: relative;
   top: -40px;
   left: -140px;
 }
 
-.sleeve {
+.new input.sleeve {
   position: relative;
   top: -30px;
   left: -54px;
 }
 
-.opening {
+.new input.opening {
   position: relative;
   top: 45px;
   left: -10px;
 }
 
-.width {
+.new input.width {
   position: relative;
   top: 82px;
   left: -236px;
 
 }
 
-.height {
+.new input.height {
   position: relative;
   top: 180px;
   left: -236px;
 }
 
-.waist {
+.new input.waist {
   position: relative;
   top: 300px;
   left: -236px;
 }
 
-.general {
+.new input.general {
   width: 106px;
   float: left;
-
-}
-
-.general input {
   margin-top: 15px;
 }
 
-.general button {
+.new button {
   margin-top: 10px;
 }
 
+.saved{
+  width: 100%;
+  float: left;
+  margin-top: 5em;  
+}
 
+.saved input.neck {
+  position: relative;
+  vertical-align: top;
+  left: -261px;
+  top: -30px;
+}
+.saved input.shoulder {
+  position: relative;
+  vertical-align: top;
+  left: -272px;
+  top: -20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.saved input.sleeve {
+  position: relative;
+  vertical-align: top;
+  left: -290px;
+  top: 25px;
+}
+.saved input.opening {
+  position: relative;
+  vertical-align: top;
+  left: -360px;
+  top: 135px;
+}
+.saved input.width {
+  position: relative;
+  vertical-align: top;
+  left: -703px;
+  top: 140px;
+}
+.saved input.height {
+  position: relative;
+  vertical-align: top;
+  left: -820px;
+  top: 270px;
+}
+.saved input.waist {
+  position: relative;
+  vertical-align: top;
+  left: -936px;
+  top: 398px;
+}
+.saved input.general {
+  position: relative;
+  vertical-align: top;
+  left: -271px;
+  top: -25px;
+}
+.saved .shirts{
+  margin-top: 2em;
+}

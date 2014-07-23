@@ -1,32 +1,27 @@
-
-
-
-<div id="shirtContainer" class="new-measurement">
-        <form>
-            <img style="float:left;"src="img/shirt.png">
-
-              <input class="neck" placeholder="Neck" ng-model="tshirt.neck">
-              <input class="shoulder" placeholder="Shoulder" ng-model="tshirt.shoulder">              
-              <input class="sleeve" placeholder="Sleeve" ng-model="tshirt.sleeve">
-              <input class="opening" placeholder="Opening" ng-model="tshirt.opening">
-              <input class="width" placeholder="Width" ng-model="tshirt.width">
-              <input class="height" placeholder="Height" ng-model="tshirt.height">
-              <input class="waist" placeholder="Waist" ng-model="tshirt.waist">
-        <div class="general">
-              <input placeholder="name" ng-model="tshirt.name">
-              <input placeholder="brand" ng-model="tshirt.brand">
-              <input placeholder="size" ng-model="tshirt.size">
-              <button type="submit" ng-click="addMessage()">send</button>
-        </div>
-        </form>
-</div><!--end shirtContainer-->
-
-
-
-<div id="shirtContainer" class="saved-measurements">
-
-<form id="shirts" ng-show="shirts" ng-repeat="shirt in shirts">
+<div class="new">
+  <form>
+    <img style="float:left;"src="img/shirt.png">
+    <input class="neck" placeholder="Neck" ng-model="tshirt.neck">
+    <input class="shoulder" placeholder="Shoulder" ng-model="tshirt.shoulder">              
+    <input class="sleeve" placeholder="Sleeve" ng-model="tshirt.sleeve">
+    <input class="opening" placeholder="Opening" ng-model="tshirt.opening">
+    <input class="width" placeholder="Width" ng-model="tshirt.width">
+    <input class="height" placeholder="Height" ng-model="tshirt.height">
+    <input class="waist" placeholder="Waist" ng-model="tshirt.waist">      
+    <div class="general">
+      <input placeholder="name" ng-model="tshirt.name">
+      <input placeholder="brand" ng-model="tshirt.brand">
+      <input placeholder="size" ng-model="tshirt.size">
+      <button type="submit" ng-click="addMessage()">send</button>
+    </div>
+  </form>
+</div>
+<div class="saved">
+  <form ng-show="shirts" class="shirts" ng-repeat="shirt in shirts">
     <img src="img/shirt.png"/>
+
+    <input class="ng-scope ng-binding neck" value="{{shirt.neck}}"/>
+    <input class="ng-scope ng-binding shoulder" value="{{shirt.shoulder}}"/>
     <input class="ng-scope ng-binding sleeve" value="{{shirt.sleeve}}"/>
     <input class="ng-scope ng-binding opening" value="{{shirt.opening}}"/>
     <input class="ng-scope ng-binding width" value="{{shirt.width}}"/>
@@ -35,5 +30,5 @@
     <input class="ng-scope ng-binding name" value="{{shirt.name}}">
     <input class="ng-scope ng-binding brand" value="{{shirt.brand}}">
     <input class="ng-scope ng-binding size" value="{{shirt.size}}">
-</form>
+   </form>
 </div>
